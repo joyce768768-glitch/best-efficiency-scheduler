@@ -1,0 +1,283 @@
+{
+  "date": "2026-10-19",
+  "tasks": [
+    {
+      "id": "tmvcyb09291",
+      "title": "T1 L2判卷流水线·点亮五度四卡",
+      "project": "与你老友",
+      "steps": [
+        {
+          "title": "N1 实录周抽样器",
+          "project": "",
+          "task": "",
+          "prompt": "在与你老友项目：admin 体验看板新增抽样入口，从 yln_rounds 每活跃圆桌随机抽 3 轮×全角色回应，生成待判卷队列存 localStorage yln_xqueue；跳过演示桌与 legacy 无时间戳桌；完成后跑 node tests/run-tests.js 保证 234 PASS 基线不破。",
+          "done": false
+        },
+        {
+          "title": "judge 四维判卷",
+          "project": "",
+          "task": "",
+          "prompt": "复用 yln-core 的 probeJudge 模板扩展四维 JSON 输出 {fidelity,veracity,warmth,synergy,issues[]}，读 yln_xqueue 逐条判卷，结果落 yln_xjudge（含桌ID/轮次/分数/issues），走管理员 Key 不扣积分；手册红线：judge 分只做观测，不做优化目标。",
+          "done": false
+        },
+        {
+          "title": "看板点亮+ERD加权",
+          "project": "",
+          "task": "",
+          "prompt": "admin.js 体验看板：F-02/V-01/W-01/S-01 四张置灰卡改为读 yln_xjudge 实算值（近7日均分+样本数），ERD 质量系数从 1.0 切换为抽样 judge 均分÷100，无抽样时回退 1.0 并标注；口径注脚同步更新。",
+          "done": false
+        }
+      ],
+      "goal": "",
+      "estimateMin": 60,
+      "startAt": "09:30",
+      "deadline": "11:30",
+      "target": "11:00",
+      "status": "todo",
+      "needsConfirm": true,
+      "confirmedAt": null,
+      "completedAt": null,
+      "createdAt": "2026-10-17T22:11:17.127Z",
+      "alerts": {
+        "start": true,
+        "target": false,
+        "deadline": false,
+        "confirmCount": 0
+      }
+    },
+    {
+      "id": "tmvcyb09f64",
+      "title": "T2 N4计时埋点·点亮快速度",
+      "project": "与你老友",
+      "steps": [
+        {
+          "title": "llmChat计时+失败捕获",
+          "project": "",
+          "task": "",
+          "prompt": "在与你老友前端生成路径（非流式 llmChat 调用处）加 t0/t1 计时与 try/catch 失败标记，写入 localStorage yln_xperf（时长/成败/桌ID/时间戳），fire-and-forget 不阻塞 UI；同步补 tests 断言。",
+          "done": false
+        },
+        {
+          "title": "看板点亮R类与P-01",
+          "project": "",
+          "task": "",
+          "prompt": "admin.js：R-01 卡改为读 yln_xperf 计算 P50/P95 响应时长，R-02 卡计算生成失败率，替换原置灰占位；P-01 首屏 LCP 用 performance API 就地采集；口径注脚补 N4 说明。",
+          "done": false
+        }
+      ],
+      "goal": "",
+      "estimateMin": 60,
+      "startAt": "09:30",
+      "deadline": "14:30",
+      "target": "14:00",
+      "status": "todo",
+      "needsConfirm": true,
+      "confirmedAt": null,
+      "completedAt": null,
+      "createdAt": "2026-10-17T22:11:17.139Z",
+      "alerts": {
+        "start": true,
+        "target": false,
+        "deadline": false,
+        "confirmCount": 0
+      }
+    },
+    {
+      "id": "tmvcyb09i28",
+      "title": "T3 N2任务流埋点·点亮开桌漏斗",
+      "project": "与你老友",
+      "steps": [
+        {
+          "title": "漏斗事件表",
+          "project": "",
+          "task": "",
+          "prompt": "在与你老友手机端加轻埋点 xfEvent(name,props)：广场/老友页曝光、选老友、发题、收到首条回应四个事件写 localStorage yln_xfunnel（fire-and-forget 写穿）；不动现有交互逻辑，tests 补断言。",
+          "done": false
+        },
+        {
+          "title": "看板点亮T-01+ERD备料",
+          "project": "",
+          "task": "",
+          "prompt": "admin.js：T-01 置灰卡改为读 yln_xfunnel 输出四级转化漏斗（带绝对数），并在 ERD 明细表旁标注 v2 升级所需信号已就绪状态；口径注脚更新。",
+          "done": false
+        }
+      ],
+      "goal": "",
+      "estimateMin": 60,
+      "startAt": "09:30",
+      "deadline": "15:45",
+      "target": "15:15",
+      "status": "todo",
+      "needsConfirm": true,
+      "confirmedAt": null,
+      "completedAt": null,
+      "createdAt": "2026-10-17T22:11:17.142Z",
+      "alerts": {
+        "start": true,
+        "target": false,
+        "deadline": false,
+        "confirmCount": 0
+      }
+    },
+    {
+      "id": "tmvcyjcij69",
+      "title": "T4 体验看板截图采集",
+      "project": "与你老友",
+      "steps": [
+        {
+          "title": "启动服务+全屏截图",
+          "project": "",
+          "task": "",
+          "prompt": "启动 与你老友 项目的 yln-server.py，用浏览器自动化截取：①管理后台体验看板全屏（ERD/BOND 主卡+五度五性区，路由 #/xpanel）②ERD/BOND 明细表区域 ③女娲管线页 ④手机端圆桌对话视图（手机视口），共 4~6 张 1440px 宽高清 PNG，存 findwork/assets/yunilaoyou/ 目录；截完逐张报告文件路径。",
+          "done": false
+        }
+      ],
+      "goal": "",
+      "estimateMin": 60,
+      "startAt": "15:45",
+      "deadline": "16:20",
+      "target": "15:50",
+      "status": "todo",
+      "needsConfirm": false,
+      "confirmedAt": null,
+      "completedAt": null,
+      "createdAt": "2026-10-17T22:17:46.268Z",
+      "alerts": {
+        "start": true,
+        "target": false,
+        "deadline": false,
+        "confirmCount": 0
+      }
+    },
+    {
+      "id": "tmvcyjcix31",
+      "title": "T5 findwork项目陈列首页+与你老友一屏",
+      "project": "findwork",
+      "steps": [
+        {
+          "title": "首页改造为项目陈列",
+          "project": "",
+          "task": "",
+          "prompt": "findwork/index.html 改造为项目陈列首页：每个项目一个全屏 section，槽位固定为：项目简介、主截图、项目背景、目标用户、官网入口按钮、详细介绍入口；视觉延续页面现有蓝紫设计系统（--grad-brand 等变量），GSAP 入场动效复用现有模式。",
+          "done": false
+        },
+        {
+          "title": "与你老友屏+详情叙事",
+          "project": "",
+          "task": "",
+          "prompt": "按新槽位填充与你老友项目：简介（AI老友圆桌产品，一句话定位）、主截图用 findwork/assets/yunilaoyou/ 素材、项目背景（AI companion 赛道+差异化定位）、目标用户画像、官网入口、详情区重点写体验指标体系方法论：ERD×BOND 双结果指标 + 五度五性诊断层 + L1/L2 落地看板（这是 AX Designer 求职叙事核心亮点，配看板截图）。",
+          "done": false
+        }
+      ],
+      "goal": "",
+      "estimateMin": 60,
+      "startAt": "16:20",
+      "deadline": "17:30",
+      "target": "17:00",
+      "status": "todo",
+      "needsConfirm": true,
+      "confirmedAt": null,
+      "completedAt": null,
+      "createdAt": "2026-10-17T22:17:46.281Z",
+      "alerts": {
+        "start": true,
+        "target": false,
+        "deadline": false,
+        "confirmCount": 0
+      }
+    },
+    {
+      "id": "tmvcys8eu81",
+      "title": "H1 体验指标手册L0",
+      "project": "huanyusixian",
+      "steps": [
+        {
+          "title": "写docs/experience-metrics.md",
+          "project": "",
+          "task": "",
+          "prompt": "在与你老友/docs/experience-metrics.md 为结构范本，为 huanyusixian（儿童绘本盲盒电商，React19+Express+SQLite）写 docs/experience-metrics.md 体验指标手册 v1.0。口径已定稿，按以下内容落笔，不要重新推导：\n\n【L1 结果层】CVR-01 开盒购买转化：四级漏斗 曝光→加购→下单→支付成功，输出逐级转化率+全链路CVR（数据源：新埋点x_funnel+已有orders表）；REBUY-01 复购回流：首单后7日内再次下单的用户占比（北极星，复购=孩子真喜欢的唯一行为证据），子口径REBUY-01b=回流单含同一系列比例（数据源：orders时间序列，现成可算）。\n【L2 诊断层·AI导购五维】全部直接收录 server/agent/eval/runner.ts 现有指标（数据源 eval_runs，零新开发）：ZH-01准·推荐命中=normHitRate↑/emptyRecallRate↓反向；WN-02稳·安全可控=guardFalseBlockRate↓护栏误拦（儿童产品红线）/divergenceRate↓路由分歧；KU-03快·响应及时=avgDurationMs（P50/P95）；SH-04省·成本健康=totalTokens/单次推荐；TS-05通·任务达成=passRate↑。\n【L2 诊断层·GUI五性】GUI-C成=下单漏斗完成率（复用CVR数据，待N1）；GUI-E效=首单操作步数/时长（待N1）；GUI-P敏=首屏LCP+视图切换耗时（performance API现成）；GUI-A一=静态断言/文案一致率；GUI-R韧=支付失败恢复率+错误态出口覆盖（待N1）。\n【L3 耦合点】AD-01 推荐采纳率=AI推荐→加购的转化率，AI体验与业务结果的接驳器，防评测分自嗨的核心制衡；埋点需把推荐会话ID与加购事件关联。次要耦合点：支付失败恢复、开盒时刻。\n【L4 埋点计划】仅一项：N1 x_funnel 六事件表（曝光/加购/下单/支付发起/支付成功/开盒互动），每事件带来源字段（AI推荐|自然浏览）——该字段使AD-01可算。\n【反模式红线】1.评测分只做门槛观测不做长期KPI（防prompt讨好判卷）2.不做满意度弹窗，主观信号只取行为（复购/加购/开盒互动）3.未成年人支付单独监控（支付失败中家长确认占比）4.CVR不奖励诱导加购，漏斗分渠道标注。\n【基线节奏】REBUY/现成eval指标立即可读基线；CVR类待N1上线跑2周。手册含数据源地图章节（eval_runs/orders/x_funnel(新)/performance API）。\n格式要求：与你老友手册一致的章节结构（总览图/定义卡表格/耦合点表/数据源地图/基线节奏/反模式红线/L1L2落地对照），指标全部ID化，页尾标注「本手册是唯一口径事实源：看板指标卡须引用本手册ID」。写完输出文件路径和字数。",
+          "done": false
+        }
+      ],
+      "goal": "",
+      "estimateMin": 60,
+      "startAt": "19:00",
+      "deadline": "22:00",
+      "target": "21:30",
+      "status": "todo",
+      "needsConfirm": true,
+      "confirmedAt": null,
+      "completedAt": null,
+      "createdAt": "2026-10-17T22:24:40.854Z",
+      "alerts": {
+        "start": true,
+        "target": false,
+        "deadline": false,
+        "confirmCount": 0
+      }
+    },
+    {
+      "id": "tmvcys8ex80",
+      "title": "H2 C端行为埋点",
+      "project": "huanyusixian",
+      "steps": [
+        {
+          "title": "六事件漏斗埋点",
+          "project": "",
+          "task": "",
+          "prompt": "huanyusixian C端商城加轻埋点 track(event)：曝光/加购/下单/支付发起/支付成功/开盒互动六事件，写穿到 server 新表 x_funnel（Express SQLite 基建，参照 eval_runs 建表方式）；不阻塞用户操作，补接口测试。",
+          "done": false
+        }
+      ],
+      "goal": "",
+      "estimateMin": 60,
+      "startAt": "22:00",
+      "deadline": "23:00",
+      "target": "22:30",
+      "status": "todo",
+      "needsConfirm": true,
+      "confirmedAt": null,
+      "completedAt": null,
+      "createdAt": "2026-10-17T22:24:40.857Z",
+      "alerts": {
+        "start": true,
+        "target": false,
+        "deadline": false,
+        "confirmCount": 0
+      }
+    },
+    {
+      "id": "tmvcys8f192",
+      "title": "H3 B端体验看板页",
+      "project": "huanyusixian",
+      "steps": [
+        {
+          "title": "xpanel看板挂载",
+          "project": "",
+          "task": "",
+          "prompt": "huanyusixian admin 新增体验看板页（参照 admin/src/pages/EvaluationPage.tsx 的卡片模式）：双结果主卡（CVR 漏斗+REBUY 读 x_funnel 实算）+AI 评测区直读 eval_runs 现有 8 指标（不重算）+GUI 五性区（可算点亮/未埋点置灰标注）+口径注脚卡引用手册 ID；路由挂到 admin/src/App.tsx 导航 'experience'。",
+          "done": false
+        }
+      ],
+      "goal": "",
+      "estimateMin": 60,
+      "startAt": "23:00",
+      "deadline": "23:59",
+      "target": "23:29",
+      "status": "todo",
+      "needsConfirm": true,
+      "confirmedAt": null,
+      "completedAt": null,
+      "createdAt": "2026-10-17T22:24:40.861Z",
+      "alerts": {
+        "start": true,
+        "target": false,
+        "deadline": false,
+        "confirmCount": 0
+      }
+    }
+  ],
+  "acks": {
+    "evening_plan": false
+  }
+}

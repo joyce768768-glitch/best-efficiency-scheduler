@@ -1,0 +1,375 @@
+{
+  "scannedAt": "2026-10-17T20:30:34.025Z",
+  "total": 41,
+  "projects": [
+    {
+      "name": "AI体验设计系统研究",
+      "lastActive": "2026-10-17T09:31:16.111Z",
+      "lastActiveText": "今天",
+      "daysAgo": 0,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "Agent-test",
+      "lastActive": "2026-10-14T07:59:24.162Z",
+      "lastActiveText": "3 天前",
+      "daysAgo": 3,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "Agentgames",
+      "lastActive": "2026-09-21T06:03:10.216Z",
+      "lastActiveText": "26 天前",
+      "daysAgo": 26,
+      "git": true,
+      "branch": "main",
+      "dirty": true
+    },
+    {
+      "name": "Agent架构深度研究",
+      "lastActive": null,
+      "lastActiveText": "—",
+      "daysAgo": 20743,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "Agent评测研究",
+      "lastActive": "2026-09-21T06:59:23.944Z",
+      "lastActiveText": "26 天前",
+      "daysAgo": 26,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "Ontology研究",
+      "lastActive": "2026-09-09T04:36:24.517Z",
+      "lastActiveText": "1 个月前",
+      "daysAgo": 38,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "TraeCode最佳实践研究",
+      "lastActive": "2026-10-17T15:45:20.197Z",
+      "lastActiveText": "今天",
+      "daysAgo": 0,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "TraeWork设计系统",
+      "lastActive": "2026-09-20T21:45:01.280Z",
+      "lastActiveText": "26 天前",
+      "daysAgo": 26,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "Vercel Copy",
+      "lastActive": "2026-09-23T07:29:30.909Z",
+      "lastActiveText": "24 天前",
+      "daysAgo": 24,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "apple-design",
+      "lastActive": "2026-09-24T06:26:27.773Z",
+      "lastActiveText": "23 天前",
+      "daysAgo": 23,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "design-skill-test",
+      "lastActive": "2026-09-14T11:21:26.425Z",
+      "lastActiveText": "1 个月前",
+      "daysAgo": 33,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "design-skill的高效运用",
+      "lastActive": "2026-08-16T15:25:51.904Z",
+      "lastActiveText": "2 个月前",
+      "daysAgo": 62,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "double-intention",
+      "lastActive": "2026-10-14T07:59:34.786Z",
+      "lastActiveText": "3 天前",
+      "daysAgo": 3,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "findwork",
+      "lastActive": "2026-10-14T16:42:31.263Z",
+      "lastActiveText": "3 天前",
+      "daysAgo": 3,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "huanyusixian",
+      "lastActive": "2026-10-16T23:08:06.604Z",
+      "lastActiveText": "今天",
+      "daysAgo": 0,
+      "git": true,
+      "branch": "main",
+      "dirty": true
+    },
+    {
+      "name": "langgraph",
+      "lastActive": "2026-05-04T00:00:46.662Z",
+      "lastActiveText": "5 个月前",
+      "daysAgo": 166,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "ontology",
+      "lastActive": "2026-05-26T01:15:26.272Z",
+      "lastActiveText": "4 个月前",
+      "daysAgo": 144,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "python-study",
+      "lastActive": "2026-05-22T07:48:47.449Z",
+      "lastActiveText": "4 个月前",
+      "daysAgo": 148,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "shipinjianji研究",
+      "lastActive": "2026-10-17T20:03:34.673Z",
+      "lastActiveText": "今天",
+      "daysAgo": 0,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "skillplatform",
+      "lastActive": "2026-10-14T07:37:48.512Z",
+      "lastActiveText": "3 天前",
+      "daysAgo": 3,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "skills-main",
+      "lastActive": "2026-07-31T01:24:11.908Z",
+      "lastActiveText": "2 个月前",
+      "daysAgo": 78,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "skills_platform",
+      "lastActive": "2026-10-17T20:30:11.078Z",
+      "lastActiveText": "今天",
+      "daysAgo": 0,
+      "git": true,
+      "branch": "main",
+      "dirty": true
+    },
+    {
+      "name": "xiaoyue-apk",
+      "lastActive": "2026-05-04T06:01:47.015Z",
+      "lastActiveText": "5 个月前",
+      "daysAgo": 166,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "youtube视频剪辑",
+      "lastActive": "2026-10-03T09:11:54.192Z",
+      "lastActiveText": "14 天前",
+      "daysAgo": 14,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "与你老友",
+      "lastActive": "2026-10-17T20:08:32.274Z",
+      "lastActiveText": "今天",
+      "daysAgo": 0,
+      "git": true,
+      "branch": "main",
+      "dirty": true
+    },
+    {
+      "name": "与你老友产品研究",
+      "lastActive": "2026-10-14T16:42:07.740Z",
+      "lastActiveText": "3 天前",
+      "daysAgo": 3,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "产品经理工作流Agent",
+      "lastActive": "2026-09-30T07:13:11.486Z",
+      "lastActiveText": "17 天前",
+      "daysAgo": 17,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "作品集",
+      "lastActive": "2026-09-18T09:01:22.157Z",
+      "lastActiveText": "29 天前",
+      "daysAgo": 29,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "公众号Agent",
+      "lastActive": "2026-08-13T01:27:15.660Z",
+      "lastActiveText": "2 个月前",
+      "daysAgo": 65,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "医院问诊Agent",
+      "lastActive": "2026-10-14T07:58:54.641Z",
+      "lastActiveText": "3 天前",
+      "daysAgo": 3,
+      "git": true,
+      "branch": "main",
+      "dirty": true
+    },
+    {
+      "name": "寰宇思贤---little-readers",
+      "lastActive": "2026-08-09T08:37:17.974Z",
+      "lastActiveText": "2 个月前",
+      "daysAgo": 69,
+      "git": true,
+      "branch": "main",
+      "dirty": false
+    },
+    {
+      "name": "广告投放聚合平台研究",
+      "lastActive": "2026-09-09T05:57:22.796Z",
+      "lastActiveText": "1 个月前",
+      "daysAgo": 38,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "最佳效率调度中心",
+      "lastActive": "2026-10-17T20:30:18.244Z",
+      "lastActiveText": "今天",
+      "daysAgo": 0,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "果蝇大脑研究",
+      "lastActive": "2026-09-19T14:03:02.002Z",
+      "lastActiveText": "28 天前",
+      "daysAgo": 28,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "生命科学医药学资源研究",
+      "lastActive": "2026-08-18T09:12:23.618Z",
+      "lastActiveText": "2 个月前",
+      "daysAgo": 60,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "电商主图详情图Agent",
+      "lastActive": "2026-10-14T07:58:04.909Z",
+      "lastActiveText": "3 天前",
+      "daysAgo": 3,
+      "git": true,
+      "branch": "main",
+      "dirty": true
+    },
+    {
+      "name": "简历",
+      "lastActive": "2026-05-14T10:34:14.353Z",
+      "lastActiveText": "5 个月前",
+      "daysAgo": 156,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "简历1",
+      "lastActive": "2026-09-14T10:46:19.016Z",
+      "lastActiveText": "1 个月前",
+      "daysAgo": 33,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "老年人健康管理系统",
+      "lastActive": null,
+      "lastActiveText": "—",
+      "daysAgo": 20743,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "自媒体变现工作流",
+      "lastActive": null,
+      "lastActiveText": "—",
+      "daysAgo": 20743,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    },
+    {
+      "name": "视频剪辑- AI文案自动化视频",
+      "lastActive": "2026-10-08T18:38:05.530Z",
+      "lastActiveText": "9 天前",
+      "daysAgo": 9,
+      "git": false,
+      "branch": "",
+      "dirty": false
+    }
+  ]
+}

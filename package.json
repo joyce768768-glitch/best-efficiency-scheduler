@@ -1,0 +1,13 @@
+{
+  "name": "efficiency-scheduler",
+  "version": "1.0.0",
+  "description": "最佳效率调度中心：每日任务规划 + 提前30分钟目标 + 自动监控响铃",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "scan": "node scripts/scan-projects.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
